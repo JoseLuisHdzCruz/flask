@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información del Alumno</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+        .card h2 {
+            margin: 10px 0;
+        }
+        .card p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/uni.jpg') }}" alt="Universidad">
+        <h2>José Luis Hernandez De La Cruz</h2>
+        <p>Grupo: A</p>
+    </div>
+</body>
+</html>
